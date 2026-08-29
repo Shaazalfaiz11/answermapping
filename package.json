@@ -1,0 +1,32 @@
+{
+  "name": "answer-mapping",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:bands": "node --experimental-strip-types scripts/detect-bands.mjs fixtures/answer_sheet_p1.png fixtures/answer_sheet_p2.png fixtures/answer_sheet_p3.png",
+    "test:api": "node scripts/e2e.mjs",
+    "test:browser": "node scripts/browser-test.mjs",
+    "test:browser:pdf": "node scripts/browser-test.mjs --pdf",
+    "fixtures:build": "powershell -File fixtures/generate.ps1",
+    "test:browser:mobile": "node scripts/browser-test.mjs --mobile"
+  },
+  "dependencies": {
+    "groq-sdk": "^0.33.0",
+    "next": "15.5.4",
+    "pdfjs-dist": "^5.4.149",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "playwright": "^1.62.1",
+    "typescript": "^5.9.2",
+    "undici": "^7.29.0"
+  }
+}
