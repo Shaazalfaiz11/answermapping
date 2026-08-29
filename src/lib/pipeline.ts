@@ -92,24 +92,37 @@ export async function runPipeline(
   );
   report("render", 1, `${questionPages.length + rawAnswerPages.length} pages ready`);
 
-  // 2. Extract the printed questions.
+  /*
+   * 2-4. Questions and answers are independent inputs, and they run on
+   * different model buckets, so reading the paper does not have to finish
+   * before the answer sheet starts. The question call goes out first and stays
+   * in flight while the CPU-only line segmentation runs, which would otherwise
+   * be dead time with no request outstanding.
+   */
   report("questions", 0.1, "Reading the question paper");
+
   const modelQuestionImages = await Promise.all(
     questionPages.map(async (p) => ({
       index: p.index,
       dataUrl: await toModelImage(p.dataUrl),
     })),
   );
-  const { questions } = await postJson<{ questions: Question[] }>(
+
+  const questionsPromise = postJson<{ questions: Question[] }>(
     "/api/extract-questions",
     { pages: modelQuestionImages },
-  );
-  if (questions.length === 0) {
-    throw new Error(
-      "No questions could be read from the question paper. Try a clearer scan.",
-    );
-  }
-  report("questions", 1, `${questions.length} questions found`);
+  ).then(({ questions }) => {
+    if (questions.length === 0) {
+      throw new Error(
+        "No questions could be read from the question paper. Try a clearer scan.",
+      );
+    }
+    report("questions", 1, `${questions.length} questions found`);
+    return questions;
+  });
+  // Nothing awaits this until the join below; without a handler a failure here
+  // would surface as an unhandled rejection before it can be reported properly.
+  questionsPromise.catch(() => undefined);
 
   // 3. Find the ink lines on each answer page and number them for the model.
   report("segment", 0, "Locating handwriting");
@@ -125,10 +138,11 @@ export async function runPipeline(
     );
   }
 
-  // 4. Transcribe each answer page, one request per page.
+  // 4. Transcribe each answer page, one request per page. Concurrency matches
+  //    the number of vision buckets: more would only queue on a token budget.
   report("answers", 0, "Reading the answer sheet");
   let pagesDone = 0;
-  const perPage = await pooled(answerPages, 2, async (page) => {
+  const blocksPromise = pooled(answerPages, 2, async (page) => {
     const { blocks } = await postJson<{ blocks: AnswerBlock[] }>("/api/extract-answers", {
       pageIndex: page.index,
       dataUrl: page.annotatedDataUrl,
@@ -143,6 +157,7 @@ export async function runPipeline(
     return blocks;
   });
 
+  const [questions, perPage] = await Promise.all([questionsPromise, blocksPromise]);
   const blocks = perPage.flat();
 
   // 5. Map answer blocks onto questions.

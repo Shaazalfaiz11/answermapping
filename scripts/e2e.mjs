@@ -10,17 +10,22 @@
  *   node scripts/e2e.mjs [baseUrl]
  */
 import { readFileSync } from "node:fs";
-import { Agent, setGlobalDispatcher } from "undici";
+import { Agent, fetch as undiciFetch } from "undici";
 
 /*
  * A route can legitimately block for minutes: the free-tier token ledger makes
- * a request wait for budget before it calls Groq at all. Node's fetch gives up
- * after 300s by default, which fails the test for a reason that has nothing to
- * do with the code under test. Browsers have no such limit.
+ * a request wait for budget before it calls Groq at all. Node's global fetch
+ * gives up after 300s, failing the test for a reason unrelated to the code
+ * under test - browsers have no such limit.
+ *
+ * The dispatcher is passed per request rather than via setGlobalDispatcher,
+ * which does not reliably reach Node's built-in fetch (that uses its own
+ * bundled copy of undici, not this one).
  */
-setGlobalDispatcher(
-  new Agent({ headersTimeout: 15 * 60_000, bodyTimeout: 15 * 60_000 }),
-);
+const dispatcher = new Agent({
+  headersTimeout: 20 * 60_000,
+  bodyTimeout: 20 * 60_000,
+});
 
 const BASE = process.argv[2] ?? "http://localhost:3005";
 
@@ -28,10 +33,11 @@ const dataUrl = (path, mime) =>
   `data:${mime};base64,${readFileSync(path).toString("base64")}`;
 
 async function post(route, body) {
-  const res = await fetch(`${BASE}${route}`, {
+  const res = await undiciFetch(`${BASE}${route}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
+    dispatcher,
   });
   const json = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(`${route} -> ${res.status}: ${json.error ?? "?"}`);

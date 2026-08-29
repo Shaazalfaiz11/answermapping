@@ -34,22 +34,26 @@ export default function Page() {
   const [result, setResult] = useState<PipelineOutput | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  /*
+   * Each stage owns its own row. Stages used to be marked done by virtue of a
+   * later one starting, which was fine when they ran in strict sequence — but
+   * question extraction and answer extraction now overlap, and that rule would
+   * tick "questions" off the moment segmentation began, while it was still
+   * running. A stage is done when it says it is.
+   */
   const report = useCallback((stage: StageId, progress: number, detail?: string) => {
-    setStages((prev) => {
-      const targetIndex = prev.findIndex((s) => s.id === stage);
-      if (targetIndex === -1) return prev;
-
-      return prev.map((s, i) => {
-        if (i < targetIndex) return { ...s, status: 'done', progress: 1 };
-        if (i > targetIndex) return s;
-        return {
-          ...s,
-          status: progress >= 1 ? 'done' : 'active',
-          progress,
-          detail: detail ?? s.detail,
-        };
-      });
-    });
+    setStages((prev) =>
+      prev.map((s) =>
+        s.id === stage
+          ? {
+              ...s,
+              status: progress >= 1 ? 'done' : 'active',
+              progress,
+              detail: detail ?? s.detail,
+            }
+          : s,
+      ),
+    );
   }, []);
 
   const start = useCallback(

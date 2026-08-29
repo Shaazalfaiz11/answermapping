@@ -85,8 +85,9 @@ export async function POST(req: Request) {
         unmatched?: Array<{ blockId?: string; reason?: string }>;
       }>({
         model: TEXT_MODEL,
+        signal: req.signal,
         system: MAPPING_SYSTEM,
-        maxTokens: 1200,
+        maxTokens: 800,
         content: [
           {
             type: "text",

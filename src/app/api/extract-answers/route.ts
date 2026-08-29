@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { VISION_MODEL, completeJson } from "@/lib/groq";
+import { completeJson, visionModelFor } from "@/lib/groq";
 import { ANSWER_EXTRACTION_SYSTEM } from "@/lib/prompts";
 import type { AnswerBlock } from "@/lib/types";
 
@@ -48,9 +48,12 @@ export async function POST(req: Request) {
 
   try {
     const result = await completeJson<{ blocks?: RawBlock[] }>({
-      model: VISION_MODEL,
+      // Alternate buckets by page so consecutive pages do not queue behind
+      // each other on one model's token budget.
+      model: visionModelFor(pageIndex),
+      signal: req.signal,
       system: ANSWER_EXTRACTION_SYSTEM,
-      maxTokens: 2200,
+      maxTokens: 1000,
       content: [
         {
           type: "text",

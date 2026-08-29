@@ -12,7 +12,9 @@
     "test:browser": "node scripts/browser-test.mjs",
     "test:browser:pdf": "node scripts/browser-test.mjs --pdf",
     "fixtures:build": "powershell -File fixtures/generate.ps1",
-    "test:browser:mobile": "node scripts/browser-test.mjs --mobile"
+    "test:browser:mobile": "node scripts/browser-test.mjs --mobile",
+    "test:ledger": "node --experimental-strip-types scripts/test-ledger.mjs",
+    "test:validate": "node scripts/validate.mjs"
   },
   "dependencies": {
     "groq-sdk": "^0.33.0",

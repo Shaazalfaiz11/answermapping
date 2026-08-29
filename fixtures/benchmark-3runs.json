@@ -1,0 +1,1329 @@
+[
+  {
+    "run": 1,
+    "prepTime": 4.240900000000238,
+    "questionTime": 3058.7187,
+    "pageTimes": [
+      2871.2417000000005,
+      29924.3295,
+      29292.982299999996
+    ],
+    "totalAnswerTime": 62089.3295,
+    "detMapTime": 1,
+    "llmMapTime": 0,
+    "gradingTime": 2821.3503999999957,
+    "totalTime": 69842.2843,
+    "questions": [
+      {
+        "id": "1",
+        "number": "1",
+        "subPart": "",
+        "label": "1",
+        "text": "Which blood vessel carries blood away from the heart?",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 0
+      },
+      {
+        "id": "2",
+        "number": "2",
+        "subPart": "",
+        "label": "2",
+        "text": "Which of the following organelles is primarily involved in photosynthesis?",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 1
+      },
+      {
+        "id": "3",
+        "number": "3",
+        "subPart": "",
+        "label": "3",
+        "text": "Explain the role of chloroplasts in photosynthesis, naming the main pigments involved and briefly outlining the two major stages of the process.",
+        "marks": 5,
+        "pageIndex": 0,
+        "order": 2
+      },
+      {
+        "id": "4",
+        "number": "4",
+        "subPart": "",
+        "label": "4",
+        "text": "Describe the flow of blood through the human heart starting from the right atrium and ending at the aorta, include the names of valves crossed.",
+        "marks": 5,
+        "pageIndex": 0,
+        "order": 3
+      },
+      {
+        "id": "5",
+        "number": "5",
+        "subPart": "",
+        "label": "5",
+        "text": "Describe the process of transpiration in plants in two to three sentences and name two environmental factors that increase its rate.",
+        "marks": 4,
+        "pageIndex": 0,
+        "order": 4
+      },
+      {
+        "id": "6",
+        "number": "6",
+        "subPart": "",
+        "label": "6",
+        "text": "Explain how the structure of xylem vessels facilitate water transport in plants (mention one structural feature and its role).",
+        "marks": 3,
+        "pageIndex": 0,
+        "order": 5
+      },
+      {
+        "id": "7a",
+        "number": "7",
+        "subPart": "a",
+        "label": "7 (a)",
+        "text": "A diagram shows two potted plants. Plant A is bright light with broad green leaves. Plant B kept in dim light with pale, elongated leaves. Explain why Plant B looks different.",
+        "marks": 3,
+        "pageIndex": 0,
+        "order": 6
+      },
+      {
+        "id": "7b",
+        "number": "7",
+        "subPart": "b",
+        "label": "7 (b)",
+        "text": "Suggest one practical measure to help Plant B recover.",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 7
+      },
+      {
+        "id": "8",
+        "number": "8",
+        "subPart": "",
+        "label": "8",
+        "text": "A resting person has a tidal volume of 0.5 L and breathes 12 times per minute. If dead space is 0.15 L per breath, calculate the alveolar ventilation per minute. Show your working.",
+        "marks": 4,
+        "pageIndex": 0,
+        "order": 8
+      }
+    ],
+    "blocks": [
+      {
+        "id": "p0b0",
+        "pageIndex": 0,
+        "startLine": 2,
+        "endLine": 4,
+        "writtenLabel": "1",
+        "text": "Q1\nThe artery carries blood away from the heart. The aorta is the largest artery and it carries oxygenated blood to the body.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b1",
+        "pageIndex": 0,
+        "startLine": 5,
+        "endLine": 7,
+        "writtenLabel": "2",
+        "text": "Q2\nThe chloroplast is the organelle involved in photosynthesis. It contains chlorophyll which traps sunlight.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b2",
+        "pageIndex": 0,
+        "startLine": 8,
+        "endLine": 11,
+        "writtenLabel": "5",
+        "text": "Q5\nTranspiration is the loss of water vapour from the leaves of a plant through the stomata. It pulls water up from the roots. Two factors that increase the rate are high temperature and windy conditions.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b3",
+        "pageIndex": 0,
+        "startLine": 12,
+        "endLine": 15,
+        "writtenLabel": "3",
+        "text": "Q3\nChloroplasts contain chlorophyll a and chlorophyll b which absorb light. The two stages are the light reaction which happens in the thylakoid and makes ATP, and the Calvin cycle in the stroma which fixes carbon dioxide into glucose.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b4",
+        "pageIndex": 0,
+        "startLine": 16,
+        "endLine": 18,
+        "writtenLabel": "7(a)",
+        "text": "Q7 a\nPlant B was kept in dim light so it could not make enough food. It grew tall and pale because it was stretching towards the light and had less chlorophyll.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b5",
+        "pageIndex": 0,
+        "startLine": 19,
+        "endLine": 20,
+        "writtenLabel": "7(b)",
+        "text": "Q7 b\nMove Plant B to a bright window so it gets enough sunlight.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b0",
+        "pageIndex": 1,
+        "startLine": 1,
+        "endLine": 5,
+        "writtenLabel": "4",
+        "text": "Q4\nBlood enters the right atrium from the vena cava. It goes through the tricuspid valve into the right ventricle, then out the pulmonary valve to the lungs. It comes back to the left atrium, through the bicuspid valve into the left ventricle and out through the aortic valve into the aorta.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b1",
+        "pageIndex": 1,
+        "startLine": 6,
+        "endLine": 7,
+        "writtenLabel": null,
+        "text": "Note\nRemember to revise the diagram of the nephron before the next test.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b2",
+        "pageIndex": 1,
+        "startLine": 8,
+        "endLine": 10,
+        "writtenLabel": "8",
+        "text": "Q8\nTidal volume = 0.5 L, dead space = 0.15 L. So fresh air per breath = 0.5 - 0.15 = 0.35 L.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p2b0",
+        "pageIndex": 2,
+        "startLine": 1,
+        "endLine": 1,
+        "writtenLabel": null,
+        "text": "Continuing Q8: alveolar ventilation = 0.35 x 12 = 4.2 L per minute.",
+        "isDiagram": false,
+        "confidence": 1
+      }
+    ],
+    "assignments": [
+      {
+        "questionId": "1",
+        "blockIds": [
+          "p0b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "2",
+        "blockIds": [
+          "p0b1"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "5",
+        "blockIds": [
+          "p0b2"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "3",
+        "blockIds": [
+          "p0b3"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "7a",
+        "blockIds": [
+          "p0b4"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "7b",
+        "blockIds": [
+          "p0b5"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "4",
+        "blockIds": [
+          "p1b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "8",
+        "blockIds": [
+          "p1b2",
+          "p2b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      }
+    ],
+    "orphans": [
+      {
+        "blockId": "p1b1",
+        "reason": "note about nephron unrelated to any listed question"
+      }
+    ],
+    "grades": [
+      {
+        "questionId": "1",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "You correctly identified that arteries carry blood away from the heart and named the aorta as the largest artery."
+      },
+      {
+        "questionId": "2",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "You correctly stated that chloroplasts are the organelles responsible for photosynthesis and mentioned chlorophyll."
+      },
+      {
+        "questionId": "3",
+        "score": 5,
+        "maxScore": 5,
+        "verdict": "correct",
+        "feedback": "You accurately named chlorophyll a and b, described the light reactions in the thylakoid and the Calvin cycle in the stroma, covering the main pigments and stages."
+      },
+      {
+        "questionId": "4",
+        "score": 5,
+        "maxScore": 5,
+        "verdict": "correct",
+        "feedback": "You correctly traced the blood flow from the right atrium to the aorta and listed all the valves crossed."
+      },
+      {
+        "questionId": "5",
+        "score": 4,
+        "maxScore": 4,
+        "verdict": "correct",
+        "feedback": "You correctly described transpiration and identified high temperature and wind as factors that increase its rate."
+      },
+      {
+        "questionId": "6",
+        "score": 0,
+        "maxScore": 3,
+        "verdict": "unanswered",
+        "feedback": "No answer was found for this question on the answer sheet."
+      },
+      {
+        "questionId": "7a",
+        "score": 3,
+        "maxScore": 3,
+        "verdict": "correct",
+        "feedback": "Your explanation that low light causes etiolation (tall, pale growth) is accurate."
+      },
+      {
+        "questionId": "7b",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "Moving the plant to a bright window is an appropriate measure to help it recover."
+      },
+      {
+        "questionId": "8",
+        "score": 4,
+        "maxScore": 4,
+        "verdict": "correct",
+        "feedback": "Your calculation of alveolar ventilation (0.35 L × 12 = 4.2 L/min) is correct and includes the required working."
+      }
+    ],
+    "summary": {
+      "totalScore": 27,
+      "totalMax": 30,
+      "answeredCount": 8,
+      "unansweredCount": 1,
+      "orphanCount": 1,
+      "overallFeedback": "The student demonstrated a strong grasp of cardiovascular and plant physiology concepts, correctly answering most questions and earning 27 out of 30 marks. Only the question on xylem structure was left unanswered, which prevented a perfect score.",
+      "strengths": [
+        "Accurate identification of the artery that carries blood away from the heart",
+        "Clear explanation of chloroplast pigments and the two stages of photosynthesis",
+        "Comprehensive description of blood flow through the heart with valve names",
+        "Correct calculation of alveolar ventilation with full working"
+      ],
+      "improvements": [
+        "Provide a specific structural feature of xylem vessels (e.g., lignified walls or pits) and explain its role in water transport",
+        "Ensure every question is attempted, even if only a brief answer is possible",
+        "Include concise but complete explanations for anatomy questions to avoid missing marks"
+      ]
+    },
+    "apiCalls": []
+  },
+  {
+    "run": 2,
+    "prepTime": 2.3346000000019558,
+    "questionTime": 21859.92169999999,
+    "pageTimes": [
+      26918.319400000008,
+      32886.2438,
+      25889.816099999996
+    ],
+    "totalAnswerTime": 85695.0348,
+    "detMapTime": 1,
+    "llmMapTime": 0,
+    "gradingTime": 2665.9067000000214,
+    "totalTime": 111071.15419999999,
+    "questions": [
+      {
+        "id": "1",
+        "number": "1",
+        "subPart": "",
+        "label": "1",
+        "text": "Which blood vessel carries blood away from the heart?",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 0
+      },
+      {
+        "id": "2",
+        "number": "2",
+        "subPart": "",
+        "label": "2",
+        "text": "Which of the following organelles is primarily involved in photosynthesis?",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 1
+      },
+      {
+        "id": "3",
+        "number": "3",
+        "subPart": "",
+        "label": "3",
+        "text": "Explain the role of chloroplasts in photosynthesis, naming the main pigments involved and briefly outlining the two major stages of the process.",
+        "marks": 5,
+        "pageIndex": 0,
+        "order": 2
+      },
+      {
+        "id": "4",
+        "number": "4",
+        "subPart": "",
+        "label": "4",
+        "text": "Describe the flow of blood through the human heart starting from the right atrium and ending at the aorta, include the names of valves crossed.",
+        "marks": 5,
+        "pageIndex": 0,
+        "order": 3
+      },
+      {
+        "id": "5",
+        "number": "5",
+        "subPart": "",
+        "label": "5",
+        "text": "Describe the process of transpiration in plants in two to three sentences and name two environmental factors that increase its rate.",
+        "marks": 4,
+        "pageIndex": 0,
+        "order": 4
+      },
+      {
+        "id": "6",
+        "number": "6",
+        "subPart": "",
+        "label": "6",
+        "text": "Explain how the structure of xylem vessels facilitate water transport in plants (mention one structural feature and its role).",
+        "marks": 3,
+        "pageIndex": 0,
+        "order": 5
+      },
+      {
+        "id": "7a",
+        "number": "7",
+        "subPart": "a",
+        "label": "7 (a)",
+        "text": "A diagram shows two potted plants. Plant A is bright light with broad green leaves. Plant B kept in dim light with pale, elongated leaves. Explain why Plant B looks different.",
+        "marks": 3,
+        "pageIndex": 0,
+        "order": 6
+      },
+      {
+        "id": "7b",
+        "number": "7",
+        "subPart": "b",
+        "label": "7 (b)",
+        "text": "Suggest one practical measure to help Plant B recover.",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 7
+      },
+      {
+        "id": "8",
+        "number": "8",
+        "subPart": "",
+        "label": "8",
+        "text": "A resting person has a tidal volume of 0.5 L and breathes 12 times per minute. If dead space is 0.15 L per breath, calculate the alveolar ventilation per minute. Show your working.",
+        "marks": 4,
+        "pageIndex": 0,
+        "order": 8
+      }
+    ],
+    "blocks": [
+      {
+        "id": "p0b0",
+        "pageIndex": 0,
+        "startLine": 2,
+        "endLine": 4,
+        "writtenLabel": "1",
+        "text": "Q1\nThe artery carries blood away from the heart. The aorta is the largest artery and it carries oxygenated blood to the body.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b1",
+        "pageIndex": 0,
+        "startLine": 5,
+        "endLine": 7,
+        "writtenLabel": "2",
+        "text": "Q2\nThe chloroplast is the organelle involved in photosynthesis. It contains chlorophyll which traps sunlight.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b2",
+        "pageIndex": 0,
+        "startLine": 8,
+        "endLine": 11,
+        "writtenLabel": "5",
+        "text": "Q5\nTranspiration is the loss of water vapour from the leaves of a plant through the stomata. It pulls water up from the roots. Two factors that increase the rate are high temperature and windy conditions.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b3",
+        "pageIndex": 0,
+        "startLine": 12,
+        "endLine": 15,
+        "writtenLabel": "3",
+        "text": "Q3\nChloroplasts contain chlorophyll a and chlorophyll b which absorb light. The two stages are the light reaction which happens in the thylakoid and makes ATP, and the Calvin cycle in the stroma which fixes carbon dioxide into glucose.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b4",
+        "pageIndex": 0,
+        "startLine": 16,
+        "endLine": 18,
+        "writtenLabel": "7(a)",
+        "text": "Q7 a\nPlant B was kept in dim light so it could not make enough food. It grew tall and pale because it was stretching towards the light and had less chlorophyll.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b5",
+        "pageIndex": 0,
+        "startLine": 19,
+        "endLine": 20,
+        "writtenLabel": "7(b)",
+        "text": "Q7 b\nMove Plant B to a bright window so it gets enough sunlight.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b0",
+        "pageIndex": 1,
+        "startLine": 1,
+        "endLine": 5,
+        "writtenLabel": "4",
+        "text": "Q4\nBlood enters the right atrium from the vena cava. It goes through the tricuspid valve into the right ventricle, then out the pulmonary valve to the lungs. It comes back to the left atrium, through the bicuspid valve into the left ventricle and out through the aortic valve into the aorta.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b1",
+        "pageIndex": 1,
+        "startLine": 6,
+        "endLine": 7,
+        "writtenLabel": null,
+        "text": "Note\nRemember to revise the diagram of the nephron before the next test.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b2",
+        "pageIndex": 1,
+        "startLine": 8,
+        "endLine": 10,
+        "writtenLabel": "8",
+        "text": "Q8\nTidal volume = 0.5 L, dead space = 0.15 L. So fresh air per breath = 0.5 - 0.15 = 0.35 L.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p2b0",
+        "pageIndex": 2,
+        "startLine": 1,
+        "endLine": 1,
+        "writtenLabel": null,
+        "text": "Continuing Q8: alveolar ventilation = 0.35 x 12 = 4.2 L per minute.",
+        "isDiagram": false,
+        "confidence": 1
+      }
+    ],
+    "assignments": [
+      {
+        "questionId": "1",
+        "blockIds": [
+          "p0b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "2",
+        "blockIds": [
+          "p0b1"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "5",
+        "blockIds": [
+          "p0b2"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "3",
+        "blockIds": [
+          "p0b3"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "7a",
+        "blockIds": [
+          "p0b4"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "7b",
+        "blockIds": [
+          "p0b5"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "4",
+        "blockIds": [
+          "p1b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "8",
+        "blockIds": [
+          "p1b2",
+          "p2b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      }
+    ],
+    "orphans": [
+      {
+        "blockId": "p1b1",
+        "reason": "note about nephron unrelated to any listed question"
+      }
+    ],
+    "grades": [
+      {
+        "questionId": "1",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "You correctly identified that arteries carry blood away from the heart and named the aorta as the largest one."
+      },
+      {
+        "questionId": "2",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "You correctly stated that chloroplasts are the organelles responsible for photosynthesis."
+      },
+      {
+        "questionId": "3",
+        "score": 5,
+        "maxScore": 5,
+        "verdict": "correct",
+        "feedback": "You accurately described chloroplasts' role, listed chlorophyll a and b, and outlined the light reactions and Calvin cycle."
+      },
+      {
+        "questionId": "4",
+        "score": 4,
+        "maxScore": 5,
+        "verdict": "partial",
+        "feedback": "You gave the correct sequence of chambers and valves, but omitted mention of the pulmonary veins returning blood to the left atrium."
+      },
+      {
+        "questionId": "5",
+        "score": 4,
+        "maxScore": 4,
+        "verdict": "correct",
+        "feedback": "You correctly described transpiration and identified high temperature and wind as factors that increase its rate."
+      },
+      {
+        "questionId": "6",
+        "score": 0,
+        "maxScore": 3,
+        "verdict": "unanswered",
+        "feedback": "No answer was found for this question on the answer sheet."
+      },
+      {
+        "questionId": "7a",
+        "score": 3,
+        "maxScore": 3,
+        "verdict": "correct",
+        "feedback": "Your explanation that low light causes etiolation (tall, pale growth) is accurate."
+      },
+      {
+        "questionId": "7b",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "Moving the plant to a bright window is an appropriate measure to help it recover."
+      },
+      {
+        "questionId": "8",
+        "score": 4,
+        "maxScore": 4,
+        "verdict": "correct",
+        "feedback": "Your calculation of alveolar ventilation (0.35 L × 12 = 4.2 L/min) is correct and includes the necessary steps."
+      }
+    ],
+    "summary": {
+      "totalScore": 26,
+      "totalMax": 30,
+      "answeredCount": 8,
+      "unansweredCount": 1,
+      "orphanCount": 1,
+      "overallFeedback": "The student demonstrated a solid grasp of most concepts, earning high marks across the majority of questions. Minor deductions were due to a partially complete answer on the heart flow description and an unanswered question on xylem structure. No major impact from unanswered items beyond the single missed question.",
+      "strengths": [
+        "Accurate identification of the aorta as the vessel carrying blood away from the heart",
+        "Clear explanation of chloroplast role, pigments, and photosynthesis stages",
+        "Comprehensive description of transpiration and relevant environmental factors",
+        "Correct analysis of plant morphology differences under varying light conditions"
+      ],
+      "improvements": [
+        "Provide a complete step‑by‑step description of blood flow including all valves for full credit",
+        "Answer the question on xylem vessel structure, mentioning a feature such as lignified secondary walls",
+        "Ensure all parts of multi‑step questions are addressed to avoid partial marks"
+      ]
+    },
+    "apiCalls": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3688,
+        "actualTokens": null,
+        "promptTokens": null,
+        "completionTokens": null,
+        "status": "retry",
+        "httpStatus": 429,
+        "latencyMs": 601,
+        "bucketBefore": 0,
+        "bucketAfter": 0
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3688,
+        "actualTokens": 2701,
+        "promptTokens": 2304,
+        "completionTokens": 397,
+        "status": "success",
+        "latencyMs": 2099,
+        "bucketBefore": 0,
+        "bucketAfter": 2701
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3462,
+        "actualTokens": null,
+        "promptTokens": null,
+        "completionTokens": null,
+        "status": "retry",
+        "httpStatus": 429,
+        "latencyMs": 259,
+        "bucketBefore": 2701,
+        "bucketAfter": 2701
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3462,
+        "actualTokens": 2854,
+        "promptTokens": 2277,
+        "completionTokens": 577,
+        "status": "success",
+        "latencyMs": 2511,
+        "bucketBefore": 2701,
+        "bucketAfter": 5555
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3462,
+        "actualTokens": 2511,
+        "promptTokens": 2277,
+        "completionTokens": 234,
+        "status": "success",
+        "latencyMs": 1700,
+        "bucketBefore": 5555,
+        "bucketAfter": 5365
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3461,
+        "actualTokens": 2342,
+        "promptTokens": 2275,
+        "completionTokens": 67,
+        "status": "success",
+        "latencyMs": 1101,
+        "bucketBefore": 5365,
+        "bucketAfter": 4853
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1887,
+        "actualTokens": 1041,
+        "promptTokens": 925,
+        "completionTokens": 116,
+        "status": "success",
+        "latencyMs": 776,
+        "bucketBefore": 0,
+        "bucketAfter": 1041
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1631,
+        "actualTokens": 996,
+        "promptTokens": 712,
+        "completionTokens": 284,
+        "status": "success",
+        "latencyMs": 1265,
+        "bucketBefore": 1041,
+        "bucketAfter": 3678
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1641,
+        "actualTokens": 1156,
+        "promptTokens": 681,
+        "completionTokens": 475,
+        "status": "success",
+        "latencyMs": 1614,
+        "bucketBefore": 1041,
+        "bucketAfter": 3193
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1530,
+        "actualTokens": 910,
+        "promptTokens": 696,
+        "completionTokens": 214,
+        "status": "success",
+        "latencyMs": 931,
+        "bucketBefore": 3193,
+        "bucketAfter": 4103
+      }
+    ]
+  },
+  {
+    "run": 3,
+    "prepTime": 6.807299999985844,
+    "questionTime": 31149.53660000002,
+    "pageTimes": [
+      26727.006699999998,
+      33024.2182,
+      26173.016899999988
+    ],
+    "totalAnswerTime": 85924.83549999999,
+    "detMapTime": 1,
+    "llmMapTime": 0,
+    "gradingTime": 2687.3138000000035,
+    "totalTime": 120495.19960000002,
+    "questions": [
+      {
+        "id": "1",
+        "number": "1",
+        "subPart": "",
+        "label": "1",
+        "text": "Which blood vessel carries blood away from the heart?",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 0
+      },
+      {
+        "id": "2",
+        "number": "2",
+        "subPart": "",
+        "label": "2",
+        "text": "Which of the following organelles is primarily involved in photosynthesis?",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 1
+      },
+      {
+        "id": "3",
+        "number": "3",
+        "subPart": "",
+        "label": "3",
+        "text": "Explain the role of chloroplasts in photosynthesis, naming the main pigments involved and briefly outlining the two major stages of the process.",
+        "marks": 5,
+        "pageIndex": 0,
+        "order": 2
+      },
+      {
+        "id": "4",
+        "number": "4",
+        "subPart": "",
+        "label": "4",
+        "text": "Describe the flow of blood through the human heart starting from the right atrium and ending at the aorta, include the names of valves crossed.",
+        "marks": 5,
+        "pageIndex": 0,
+        "order": 3
+      },
+      {
+        "id": "5",
+        "number": "5",
+        "subPart": "",
+        "label": "5",
+        "text": "Describe the process of transpiration in plants in two to three sentences and name two environmental factors that increase its rate.",
+        "marks": 4,
+        "pageIndex": 0,
+        "order": 4
+      },
+      {
+        "id": "6",
+        "number": "6",
+        "subPart": "",
+        "label": "6",
+        "text": "Explain how the structure of xylem vessels facilitate water transport in plants (mention one structural feature and its role).",
+        "marks": 3,
+        "pageIndex": 0,
+        "order": 5
+      },
+      {
+        "id": "7a",
+        "number": "7",
+        "subPart": "a",
+        "label": "7 (a)",
+        "text": "A diagram shows two potted plants. Plant A is bright light with broad green leaves. Plant B kept in dim light with pale, elongated leaves. Explain why Plant B looks different.",
+        "marks": 3,
+        "pageIndex": 0,
+        "order": 6
+      },
+      {
+        "id": "7b",
+        "number": "7",
+        "subPart": "b",
+        "label": "7 (b)",
+        "text": "Suggest one practical measure to help Plant B recover.",
+        "marks": 2,
+        "pageIndex": 0,
+        "order": 7
+      },
+      {
+        "id": "8",
+        "number": "8",
+        "subPart": "",
+        "label": "8",
+        "text": "A resting person has a tidal volume of 0.5 L and breathes 12 times per minute. If dead space is 0.15 L per breath, calculate the alveolar ventilation per minute. Show your working.",
+        "marks": 4,
+        "pageIndex": 0,
+        "order": 8
+      }
+    ],
+    "blocks": [
+      {
+        "id": "p0b0",
+        "pageIndex": 0,
+        "startLine": 2,
+        "endLine": 4,
+        "writtenLabel": "1",
+        "text": "Q1\nThe artery carries blood away from the heart. The aorta is the largest artery and it carries oxygenated blood to the body.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b1",
+        "pageIndex": 0,
+        "startLine": 5,
+        "endLine": 7,
+        "writtenLabel": "2",
+        "text": "Q2\nThe chloroplast is the organelle involved in photosynthesis. It contains chlorophyll which traps sunlight.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b2",
+        "pageIndex": 0,
+        "startLine": 8,
+        "endLine": 11,
+        "writtenLabel": "5",
+        "text": "Q5\nTranspiration is the loss of water vapour from the leaves of a plant through the stomata. It pulls water up from the roots. Two factors that increase the rate are high temperature and windy conditions.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b3",
+        "pageIndex": 0,
+        "startLine": 12,
+        "endLine": 15,
+        "writtenLabel": "3",
+        "text": "Q3\nChloroplasts contain chlorophyll a and chlorophyll b which absorb light. The two stages are the light reaction which happens in the thylakoid and makes ATP, and the Calvin cycle in the stroma which fixes carbon dioxide into glucose.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b4",
+        "pageIndex": 0,
+        "startLine": 16,
+        "endLine": 18,
+        "writtenLabel": "7(a)",
+        "text": "Q7 a\nPlant B was kept in dim light so it could not make enough food. It grew tall and pale because it was stretching towards the light and had less chlorophyll.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p0b5",
+        "pageIndex": 0,
+        "startLine": 19,
+        "endLine": 20,
+        "writtenLabel": "7(b)",
+        "text": "Q7 b\nMove Plant B to a bright window so it gets enough sunlight.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b0",
+        "pageIndex": 1,
+        "startLine": 1,
+        "endLine": 5,
+        "writtenLabel": "4",
+        "text": "Q4\nBlood enters the right atrium from the vena cava. It goes through the tricuspid valve into the right ventricle, then out the pulmonary valve to the lungs. It comes back to the left atrium, through the bicuspid valve into the left ventricle and out through the aortic valve into the aorta.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b1",
+        "pageIndex": 1,
+        "startLine": 6,
+        "endLine": 7,
+        "writtenLabel": null,
+        "text": "Note\nRemember to revise the diagram of the nephron before the next test.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p1b2",
+        "pageIndex": 1,
+        "startLine": 8,
+        "endLine": 10,
+        "writtenLabel": "8",
+        "text": "Q8\nTidal volume = 0.5 L, dead space = 0.15 L. So fresh air per breath = 0.5 - 0.15 = 0.35 L.",
+        "isDiagram": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "p2b0",
+        "pageIndex": 2,
+        "startLine": 1,
+        "endLine": 1,
+        "writtenLabel": null,
+        "text": "Continuing Q8: alveolar ventilation = 0.35 x 12 = 4.2 L per minute.",
+        "isDiagram": false,
+        "confidence": 1
+      }
+    ],
+    "assignments": [
+      {
+        "questionId": "1",
+        "blockIds": [
+          "p0b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "2",
+        "blockIds": [
+          "p0b1"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "5",
+        "blockIds": [
+          "p0b2"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "3",
+        "blockIds": [
+          "p0b3"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "7a",
+        "blockIds": [
+          "p0b4"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "7b",
+        "blockIds": [
+          "p0b5"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "4",
+        "blockIds": [
+          "p1b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      },
+      {
+        "questionId": "8",
+        "blockIds": [
+          "p1b2",
+          "p2b0"
+        ],
+        "method": "label",
+        "confidence": 0.98,
+        "note": "Matched on the question number written by the student"
+      }
+    ],
+    "orphans": [
+      {
+        "blockId": "p1b1",
+        "reason": "note about nephron unrelated to any listed question"
+      }
+    ],
+    "grades": [
+      {
+        "questionId": "1",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "You correctly identified that arteries carry blood away from the heart and named the aorta."
+      },
+      {
+        "questionId": "2",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "You correctly stated that chloroplasts are the organelles for photosynthesis and mentioned chlorophyll."
+      },
+      {
+        "questionId": "3",
+        "score": 5,
+        "maxScore": 5,
+        "verdict": "correct",
+        "feedback": "You accurately named chlorophyll a and b, described the light reactions in the thylakoids and the Calvin cycle in the stroma."
+      },
+      {
+        "questionId": "4",
+        "score": 5,
+        "maxScore": 5,
+        "verdict": "correct",
+        "feedback": "You correctly traced the blood path through the heart and listed all the valves crossed."
+      },
+      {
+        "questionId": "5",
+        "score": 4,
+        "maxScore": 4,
+        "verdict": "correct",
+        "feedback": "You correctly defined transpiration and identified high temperature and wind as factors that increase its rate."
+      },
+      {
+        "questionId": "6",
+        "score": 0,
+        "maxScore": 3,
+        "verdict": "unanswered",
+        "feedback": "No answer was found for this question on the answer sheet."
+      },
+      {
+        "questionId": "7a",
+        "score": 3,
+        "maxScore": 3,
+        "verdict": "correct",
+        "feedback": "Your explanation that low light causes etiolation (tall, pale growth) is accurate."
+      },
+      {
+        "questionId": "7b",
+        "score": 2,
+        "maxScore": 2,
+        "verdict": "correct",
+        "feedback": "Moving the plant to a bright window is an appropriate measure to restore normal growth."
+      },
+      {
+        "questionId": "8",
+        "score": 4,
+        "maxScore": 4,
+        "verdict": "correct",
+        "feedback": "Your calculation of alveolar ventilation (0.35 L × 12 = 4.2 L/min) and the shown work are correct."
+      }
+    ],
+    "summary": {
+      "totalScore": 27,
+      "totalMax": 30,
+      "answeredCount": 8,
+      "unansweredCount": 1,
+      "orphanCount": 1,
+      "overallFeedback": "The student demonstrated a strong grasp of cardiovascular and plant physiology concepts, earning 27 out of 30 marks. Only the question on xylem structure was left unanswered, which accounted for the lost marks. All other items were answered correctly and with appropriate detail.",
+      "strengths": [
+        "Accurate identification of the aorta as the vessel carrying blood away from the heart",
+        "Clear explanation of chloroplast pigments and the two stages of photosynthesis",
+        "Comprehensive description of blood flow through the heart including valve names",
+        "Correct calculation of alveolar ventilation with shown working"
+      ],
+      "improvements": [
+        "Provide a response for the xylem vessel structure question, mentioning a feature such as lignified walls or hollow tubes",
+        "When answering multi‑part questions, double‑check that every sub‑part is addressed",
+        "Include brief diagrams or labeled sketches where asked to enhance clarity"
+      ]
+    },
+    "apiCalls": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3688,
+        "actualTokens": 2701,
+        "promptTokens": 2304,
+        "completionTokens": 397,
+        "status": "success",
+        "latencyMs": 2295,
+        "bucketBefore": 4853,
+        "bucketAfter": 5043
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3462,
+        "actualTokens": 2854,
+        "promptTokens": 2277,
+        "completionTokens": 577,
+        "status": "success",
+        "latencyMs": 2339,
+        "bucketBefore": 5043,
+        "bucketAfter": 5555
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3462,
+        "actualTokens": 2511,
+        "promptTokens": 2277,
+        "completionTokens": 234,
+        "status": "success",
+        "latencyMs": 1812,
+        "bucketBefore": 5555,
+        "bucketAfter": 5365
+      },
+      {
+        "model": "qwen/qwen3.8-27b",
+        "estimatedCost": 3461,
+        "actualTokens": 2342,
+        "promptTokens": 2275,
+        "completionTokens": 67,
+        "status": "success",
+        "latencyMs": 1433,
+        "bucketBefore": 5365,
+        "bucketAfter": 4853
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1887,
+        "actualTokens": 1041,
+        "promptTokens": 925,
+        "completionTokens": 116,
+        "status": "success",
+        "latencyMs": 684,
+        "bucketBefore": 0,
+        "bucketAfter": 1041
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1631,
+        "actualTokens": 979,
+        "promptTokens": 712,
+        "completionTokens": 267,
+        "status": "success",
+        "latencyMs": 1319,
+        "bucketBefore": 1041,
+        "bucketAfter": 3661
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1641,
+        "actualTokens": 1100,
+        "promptTokens": 681,
+        "completionTokens": 419,
+        "status": "success",
+        "latencyMs": 1376,
+        "bucketBefore": 1041,
+        "bucketAfter": 3120
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "estimatedCost": 1530,
+        "actualTokens": 976,
+        "promptTokens": 696,
+        "completionTokens": 280,
+        "status": "success",
+        "latencyMs": 1257,
+        "bucketBefore": 3120,
+        "bucketAfter": 4096
+      }
+    ]
+  }
+]

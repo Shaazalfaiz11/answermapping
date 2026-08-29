@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import {
   MAX_IMAGES_PER_REQUEST,
-  VISION_MODEL,
   completeJson,
   mapLimited,
+  visionModelFor,
 } from "@/lib/groq";
 import { QUESTION_EXTRACTION_SYSTEM } from "@/lib/prompts";
 import { questionKey } from "@/lib/mapping";
@@ -65,12 +65,15 @@ export async function POST(req: Request) {
   }
 
   try {
-    const perBatch = await mapLimited(batches, 1, async (batch) => {
+    // Two batches can be in flight when they land on different buckets.
+    const concurrency = Math.min(2, batches.length);
+    const perBatch = await mapLimited(batches, concurrency, async (batch, batchIndex) => {
       const indexList = batch.map((p) => p.index).join(", ");
       const result = await completeJson<{ questions?: RawQuestion[] }>({
-        model: VISION_MODEL,
+        model: visionModelFor(batchIndex),
+        signal: req.signal,
         system: QUESTION_EXTRACTION_SYSTEM,
-        maxTokens: 3000,
+        maxTokens: 1200,
         content: [
           {
             type: "text",

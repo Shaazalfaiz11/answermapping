@@ -69,11 +69,15 @@ export async function POST(req: Request) {
   }
 
   try {
-    const results = await mapLimited(batches, 1, async (batch) =>
+    // Two in flight: settling the ledger against real usage leaves enough of
+    // the text model's budget for a second batch, and grading is the last
+    // stage a teacher waits on.
+    const results = await mapLimited(batches, 2, async (batch) =>
       completeJson<{ grades?: RawGrade[] }>({
         model: TEXT_MODEL,
+        signal: req.signal,
         system: GRADING_SYSTEM,
-        maxTokens: 1500,
+        maxTokens: 800,
         temperature: 0.2,
         content: [
           {
@@ -150,6 +154,7 @@ export async function POST(req: Request) {
       improvements?: string[];
     }>({
       model: TEXT_MODEL,
+      signal: req.signal,
       system: SUMMARY_SYSTEM,
       maxTokens: 700,
       temperature: 0.3,
