@@ -16,3 +16,5 @@ fixtures/shots-mobile/
 fixtures/probe_*.jpg
 fixtures/bands.json
 design/
+
+.vercel
